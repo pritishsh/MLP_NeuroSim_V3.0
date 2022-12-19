@@ -76,8 +76,8 @@ Param::Param() {
 	Hthreshold = 0.5;	// The spiking threshold for the hidden layer (da1 in Train.cpp and Test.cpp)
 	numColMuxed = 16;	// How many columns share 1 read circuit (for analog RRAM) or 1 S/A (for digital RRAM)
 	numWriteColMuxed = 16;	// How many columns share 1 write column decoder driver (for digital RRAM)
-	writeEnergyReport = true;	// Report write energy calculation or not
-	NeuroSimDynamicPerformance = true; // Report the dynamic performance (latency and energy) in NeuroSim or not
+	writeEnergyReport = false;	// Report write energy calculation or not
+	NeuroSimDynamicPerformance = false; // Report the dynamic performance (latency and energy) in NeuroSim or not
 	relaxArrayCellHeight = 0;	// True: relax the array cell height to standard logic cell height in the synaptic array
 	relaxArrayCellWidth = 0;	// True: relax the array cell width to standard logic cell width in the synaptic array
 	arrayWireWidth = 100;	// Array wire width (nm)
